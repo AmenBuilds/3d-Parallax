@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap");
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins" , sans-serif ;
+    background-color: #333;
+}
+
+header{
+    width: 100%;
+    border-bottom: 1px solid white;
+    position: absolute;
+    z-index: 9999;
+    padding: 0.9rem 0;
+    top: 0;
+    left: 0;
+}
+
+header nav{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoo{
+    border: 2px solid black;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header ul a{
+    text-decoration: none;
+    color: white;
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.83rem;
+}
+
+.Search a{
+    font-size: 1.05rem;
+    padding: 0 3rem;
+}
+
+.bar{
+    padding-left: 1.5rem;
+}
+
+.lbar a{
+    padding: 0;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    border-radius: 50%;
+    background-color: grey;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+}
+
+.lbar .bar{
+    position: relative;
+    width: 52%;
+    height: 1.3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.lbar .bar::before,
+ .lbar .bar::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%);
+    height: 100%;
+    background-color: inherit;
+    border-radius: 2px;
+}
+
+.lbar .bar::before{
+    top:-4.5px;
+
+}
+
+.lbar .bar::after{
+    top:4.5px;
+}
+
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.parallax{
+    pointer-events: none;
+    transition: 0.45s cubic-bezier(.28,.56,.44,1);
+}
+
+
+
+
+
+
+.bg-img{
+    position: absolute;
+    width: 2800px;
+    top: calc(50% - 350px);
+    left: calc(50% + 10px);
+    z-index: 1;
+}
+
+.fog_7{
+    position: absolute;
+    width: 1900px;
+    z-index: 2;
+    top: calc(50% - 100px);
+    left: calc(50% + 300px);
+}
+
+.mountain_10{
+    position: absolute;
+    width: 892px;
+    z-index: 3;
+    top: calc(50% + 69px);
+    left: calc(50% + 230px);
+}
+
+.fog_6{
+    position: absolute;
+    width: 1610px;
+    z-index: 4;
+    top: calc(50% + 85px);
+    left: calc(50% + 10px);
+}
+
+.mountain_9{
+    position: absolute;
+    width: 470px;
+    z-index: 5;
+    top: calc(50% + 113px);
+    left: calc(50% - 457px);
+}
+
+.mountain_8{
+    position: absolute;
+    width: 810px;
+    z-index: 6;
+    top: calc(50% + 86px);
+    left: calc(50% - 202px);
+}
+
+
+.fog_5{
+    position: absolute;
+    width: 450px;
+    z-index: 7;
+    top: calc(50% + 160px);
+    left: calc(50% + 20px);
+}
+
+.mountain_7{
+    position: absolute;
+    width: 538px;
+    z-index: 8;
+    top: calc(50% + 123px);
+    left: calc(50% + 305px);
+}
+
+.Title{
+    position: absolute;
+    z-index: 9;
+    top: calc(50% - 70px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    pointer-events: auto;
+}
+
+.Title h2{
+    font-weight: 300;
+    font-size: 6.5rem;
+}
+
+.Title h1{
+    font-weight: 800;
+    font-size: 8rem;
+    line-height: 0.88;
+}
+
+.mountain_6{
+    position: absolute;
+    width: 408px;
+    z-index: 10;
+    top: calc(50% + 60px);
+    left: calc(50% + 590px);
+}
+
+.fog_4{
+    position: absolute;
+    width: 590px;
+    z-index: 11;
+    top: calc(50% + 223px);
+    left: calc(50% - 60px);
+}
+
+.mountain_5{
+    position: absolute;
+    width: 625px;
+    z-index: 12;
+    top: calc(50% + 250px);
+    left: calc(50% - 130px);
+}
+
+.fog_3{
+ z-index: 7;
+ top: calc(50% + 171px);
+ left: calc(50% + 29px);
+ width: 449px;
+}
+
+.mountain_3{
+ z-index: 15;
+ top: calc(50% + 133px);
+ left: calc(50% + 736px);
+ width: 419px;
+}
+
+
+.fog_2{
+ z-index: 4;
+ top: calc(50% + 95px);
+ left: calc(50% + 7px);
+ width: 1833px;
+}
+
+.mountain_2{
+ z-index: 17;
+ top: calc(50% + 188px);
+ left: calc(50% + 412px);
+ width: 625px;
+}
+
+.mountain_1{
+    position: absolute;
+    width: 530px;
+    z-index: 18;
+    top: calc(50% + 17px);
+    left: calc(50% - 601px);
+}
+
+
+.sun_rays{
+    position: absolute;
+    z-index: 19;
+    top: 0;
+    right: 0;
+    width: 595px;
+    pointer-events: none;
+}
+
+.black_shadow{
+    position: absolute;
+    z-index: 20;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+.fog_1{
+ z-index: 21;
+ top: calc(100% - 355px);
+ left: 50%;
+ width: 1600px;
+}
+
+.vignette{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:radial-gradient(ellipse at center, rgba(0, 0 , 0 ,0) 65%, rgba(0, 0 , 0 ,0.7));
+    pointer-events: none;
+}
